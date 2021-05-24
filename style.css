@@ -1,8 +1,10 @@
+
 body{
 background:black;
 color:white;
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
+overflow-x:hidden
 }
 
 h1,h2,h3, p.lead{
@@ -26,4 +28,36 @@ font-size:0.8rem;
 h5{
 font-size:1rem;
 color:silver;
+}
+
+#cover{
+  width: 100vw;
+  height:70vw;
+  overflow: hidden;
+  text-align: center;
+}
+#cover .layer{
+  position: absolute;
+  width: 100vw;
+  height:70vw;
+  background-position: center;
+  background-size: cover;
+}
+#cover .back{background-image: url(img/layers_back.png);}
+#cover .over{background-image: url(img/layers_top.png);}
+#cover ul{
+  position: absolute;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  list-style:none;
+  bottom: 270px;
+  left: -200px;
+  -webkit-transform: rotate(-17deg);
+  -moz-transform: rotate(-17deg);
+  -ms-transform: rotate(-17deg);
+  -o-transform: rotate(-17deg);
+  transform: rotate(-17deg);
 }
